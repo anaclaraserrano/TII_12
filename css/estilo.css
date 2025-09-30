@@ -1,0 +1,73 @@
+/*css externo - para qeu funcione é necessário fazer o limk no html.*/
+
+h1{
+    background-color: rgb(192, 33, 184);
+    padding: 5px;
+    font-family: cursive;
+    text-align: center;
+}
+
+p, li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+a{
+    background-color: rgb(52, 206, 193);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: solid black 2px;
+    margin:30px
+
+
+}
+
+
+/* Comportamento de link a ser clicado*/
+a:link{
+    color: 6cff 0;   
+}
+/*Comportamento do link depois de ser clicado*/
+a:visited{
+    color: rgb(20, 12, 1);
+    background-color: rgb(162, 218, 199);
+}
+/* Comportamento de passar sobre*/
+a:hover{
+    background-color: rgb(79, 219, 109);
+    color:black
+}
+a:active{
+    background-color: red;
+    color:black
+}
+
+/*Trabalhando com um  Pseudo elemento*/
+p::first-line{
+    color: rgb(158, 13, 93);
+    font-variant: small-caps;
+}
+
+p::first-letter{
+    color: red;
+    font-size: large;
+}
+
+h3::before{
+    content: url(/img/noiva_cadaver.jpg);
+}
+h3::after{
+    content:url(/img/chapeleiro.jpg)
+}
+
+::marker{
+    color: browns;
+}
+
+::selection{
+    color: white;
+    background-color: burlywood;
+
+}
