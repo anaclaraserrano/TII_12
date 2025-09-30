@@ -62,10 +62,12 @@ h3::after{
     content:url(/img/chapeleiro.jpg)
 }
 
+/*ESte pseudo elemento é espeecifico para lista, pois modifica os "bulets ou marcdores" da lista*/
 ::marker{
     color: browns;
 }
 
+/* Este pseudo elemento modifica o que o úsuario está selecionando*/
 ::selection{
     color: white;
     background-color: burlywood;
