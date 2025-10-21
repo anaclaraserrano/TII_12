@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" contnt="width=device-vidth, initial-scale=1.0">
+    <title>@media</title>
+    <style>
+        /*mobile frist*/
+        body {
+            background-color: rgb(214, 139, 139);
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .tudo {
+            background-color: black;
+            width: 500px;
+        }
+
+        .menuitem {
+            background-color: white;
+        }
+
+
+        @media only screen and (min-width:325px) {
+            body {
+                background-color: darkblue;
+            }
+        }
+        
+        @media only screen and (min-width:768px) {
+            body {
+                background-color: blueviolet;
+            }
+        }
+
+        @media only screen and (min-width:1024px) {
+            body {
+                background-color: brown;
+            }
+
+            #menulist,
+            .topnav {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>@media</h1>
+    <p>
+        Rega, introduzida em css3, possibilitou deinir regras de estilos diferentes para diferentes tipos de mídia.</p>
+    <p> As consultas de mídia pode ser usadas para vrificar muitas coisas, como:</p>
+    <ul>
+        <li>Largura e altura da viewpçost</li>
+        <li>Orientação da viewport (paisagem ou retrato)</li>
+        <li>Resolução</li>
+    </ul>
+    <p>Usando consultas de mídia sã uma técnica popular para ofrecer um estilo personalizado Folha para desktop,
+        laptops, tablets e smartphones.</p>
+    </p>
+    <p>Exemplos:</p>
+    <div Class="tudo">
+        <div id="list">
+            <ul id="menulist">
+                <li class="menuitem">Conteúdo 1.</li>
+                <li class="menuitem">Conteúdo 2.</li>
+                <li class="menuitem">Conteúdo 3.</li>
+                <li class="menuitem">Conteúdo 4.</li>
+                <li class="menuitem">Conteúdo 5.</li>
+            </ul>
+        </div>
+        <div id="texto">
+            <h1>Conteúdo de quebra</h1>
+            <p>Quando determianmos as medidas em pixel das rientações de páginas, estamos falando dos chamados
+                "brakpoint"</p>
+        </div>
+    </div>
+    <p>MENU</p>
+    <div Class="topnav">
+        <p><a href="#">HOME</a></p>
+        <p><a href="#">MENU</a></p>
+        <p><a href="#">CONTATO</a></p>
+    </div>
+</body>
+
+</html>
